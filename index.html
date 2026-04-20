@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lilt プライバシーポリシー</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --text: #1d1d1f;
+      --muted: #6e6e73;
+      --accent: #06c;
+      --rule: rgba(0, 0, 0, 0.12);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --text: #f5f5f7;
+        --muted: #a1a1a6;
+        --accent: #2997ff;
+        --rule: rgba(255, 255, 255, 0.14);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 56px 22px 80px;
+    }
+
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      letter-spacing: 0.01em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4.2vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+    }
+
+    .updated {
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .lead {
+      margin: 28px 0 0;
+      font-size: clamp(1rem, 1.6vw, 1.12rem);
+      line-height: 1.65;
+      color: var(--text);
+    }
+
+    .section {
+      padding-top: 34px;
+      margin-top: 34px;
+      border-top: 1px solid var(--rule);
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.28rem;
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 16px;
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin: 0 0 8px;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.95em;
+      background: rgba(127, 127, 127, 0.14);
+      padding: 0.12em 0.38em;
+      border-radius: 0.4em;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="content">
+      <p class="eyebrow">Lilt</p>
+      <h1>Lilt プライバシーポリシー</h1>
+      <p class="updated">最終更新日: 2026年4月19日</p>
+      <p class="lead">Lilt（以下、「本アプリ」といいます。）は、家計管理・貯金管理を目的としたアプリです。本ポリシーでは、本アプリにおける情報の取り扱いについて説明します。</p>
+
+      <section class="section">
+        <h2>1. 取得・保存する情報</h2>
+        <p>本アプリは、ユーザーが入力した以下の情報を端末内に保存します。</p>
+        <ul>
+          <li>収入、支出、固定費、分割払い、貯金調整などの家計データ</li>
+          <li>カテゴリ名、支払元名、メモなど、家計管理に関連する設定情報</li>
+          <li>アプリ内設定</li>
+        </ul>
+        <p>これらの情報は、ユーザーが本アプリの機能を利用するために使用されます。</p>
+      </section>
+
+      <section class="section">
+        <h2>2. 情報の外部送信について</h2>
+        <p>本アプリは、ユーザーの家計データを開発者のサーバーへ自動送信しません。</p>
+        <p>ただし、以下の機能をユーザーが利用した場合は、必要な範囲で外部サービスまたはOS機能を利用します。</p>
+        <ul>
+          <li><code>iCloudバックアップ</code><br> Lilt Plus の対象機能として、ユーザーが作成したバックアップデータをユーザー自身の iCloud Drive に保存することがあります。</li>
+          <li><code>App Store 課金</code><br> Lilt Plus の購入、更新状況の確認、購入の復元には Apple の StoreKit を利用します。</li>
+          <li><code>CSVの書き出し・読み込み</code><br> ユーザーが明示的に操作した場合に限り、CSV ファイルの書き出しまたは読み込みを行います。</li>
+          <li><code>Face ID / パスコードによる保護</code><br> アプリロック機能では、Apple の認証機能を利用します。生体情報そのものを本アプリが取得・保存することはありません。</li>
+          <li><code>ダッシュボード洞察</code><br> 対応環境では、ダッシュボード内の月次洞察の生成に Apple のオンデバイス処理を利用する場合があります。対応する処理は端末上で行われ、開発者のサーバーへ家計データを送信することはありません。</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>3. 収集しない情報</h2>
+        <p>本アプリは、少なくとも現行バージョンにおいて、以下を目的とした外部送信を行いません。</p>
+        <ul>
+          <li>広告配信</li>
+          <li>第三者広告SDKの利用</li>
+          <li>開発者独自のアクセス解析・行動追跡</li>
+          <li>ユーザーの家計データの販売</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>4. データの管理</h2>
+        <p>本アプリ内のデータ管理は、主にユーザーの端末内で行われます。ユーザーは、アプリ内機能を通じてデータの入力、修正、削除、CSV入出力、バックアップ作成を行えます。</p>
+        <p>iCloud バックアップを利用する場合、保存先および管理は Apple が提供する iCloud の仕組みに依存します。iCloud の取り扱いについては、<a href="https://www.apple.com/jp/legal/internet-services/icloud/jp/terms.html" target="_blank" rel="noreferrer">Apple の iCloud 利用規約</a>および<a href="https://www.apple.com/jp/legal/privacy/jp/" target="_blank" rel="noreferrer">Apple のプライバシーポリシー</a>もあわせてご確認ください。</p>
+        <p>Lilt Plus に含まれる iCloud 同期およびバックアップ機能は、ユーザーデータの保存、完全性、復元可能性を保証するものではありません。通信環境、端末設定、iCloud の状態、Apple が提供するサービスの挙動等により、同期の遅延・未反映、バックアップ作成の失敗、復元不能が発生する場合があります。</p>
+      </section>
+
+      <section class="section">
+        <h2>5. 未成年の利用</h2>
+        <p>本アプリは、特定の年齢層を対象として個人情報を収集することを目的としていません。</p>
+      </section>
+
+      <section class="section">
+        <h2>6. 本ポリシーの変更</h2>
+        <p>本ポリシーは、機能追加や法令等の変更に応じて改定されることがあります。重要な変更がある場合は、必要に応じて本アプリまたは配布ページ上でお知らせします。</p>
+      </section>
+
+      <section class="section">
+        <h2>7. 免責事項</h2>
+        <p>本アプリの利用にあたっては、内容の正確性、完全性、有用性、継続的な提供について万全を期していますが、これらを保証するものではありません。</p>
+        <p>本アプリの利用または利用不能により生じた損害について、開発者は責任を負いません。これには、アプリ内データの消失、バックアップや復元の失敗、計算結果や表示内容の誤り、端末やOS、外部サービスとの連携不具合、その他直接的または間接的に生じた損害を含みます。</p>
+        <p>ユーザーは、必要に応じてご自身の判断でデータの確認、書き出し、バックアップ等を行うものとします。</p>
+      </section>
+
+      <section class="section">
+        <h2>8. お問い合わせ</h2>
+        <p>本アプリに関するお問い合わせは、以下の連絡先までお願いします。</p>
+        <ul>
+          <li>開発者: Yutaro Kojima</li>
+          <li>連絡先: <a href="mailto:takes-interim77@icloud.com">takes-interim77@icloud.com</a></li>
+        </ul>
+      </section>
+
+      <p class="footer">Copyright © Lilt</p>
+    </article>
+  </main>
+</body>
+</html>
